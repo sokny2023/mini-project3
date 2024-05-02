@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className="shadow-ss1">
+        <header className="shadow-ss1 sticky top-0 z-50">
           <section className="container mx-auto w-[92%]">
             <NavbarComponent />
           </section>
