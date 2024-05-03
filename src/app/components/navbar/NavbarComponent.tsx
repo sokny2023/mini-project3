@@ -32,7 +32,9 @@ export function NavbarComponent() {
         </span>
       </Navbar.Brand>
       <div className="flex md:order-2">
-        <Button className="bg-blue-500">Login</Button>
+        {/* <Button className="bg-blue-500">Login</Button>/ */}
+        <a href="/login1" className="text-xl text-gray-100 py-1 px-4
+        bg-blue-500 hover:bg-blue-500 rounded-sm">Login</a>
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>

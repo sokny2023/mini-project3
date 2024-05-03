@@ -6,7 +6,6 @@ import CardProductComponent from "../components/card/CardProdct";
 import { Suspense } from "react";
 import Loading from "./loading";
 
-
 async function fetchProduct() {
   const product = await fetch(
     "https://store.istad.co/api/products/?page=1&page_size=12",
