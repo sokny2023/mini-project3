@@ -30,7 +30,7 @@ export default async function Home() {
       <div className="w-[90%] mx-auto mt-12 z-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center gap-8">
         <Suspense fallback={<Loading/>}>
           {product?.map((pro: ProductType) => (
-              <Link href={`/${pro.id}`} key={pro.id}>
+              <Link href={`/products/${pro.id}`} key={pro.id}>
                 <CardProductComponent
                   image={pro.image}
                   desc={pro.desc}
