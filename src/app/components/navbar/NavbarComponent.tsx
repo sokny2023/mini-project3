@@ -32,30 +32,29 @@ export function NavbarComponent() {
         </span>
       </Navbar.Brand>
       <div className="flex md:order-2">
-        {/* <Button className="bg-blue-500">Login</Button>/ */}
-        <a href="/login1" className="text-xl text-gray-100 py-1 px-4
+        <a href="/login" className="text-xl text-gray-100 py-1 px-4
         bg-blue-500 hover:bg-blue-500 rounded-sm">Login</a>
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
-                {MenuList.map((item, index) => (
-                    <NavbarLink
-                        key={index}
-                        as={Link}
-                        href={item.path}
-                        active={item.path === pathname}
-                        style={{
-                            fontSize: "1.25rem",
-                            color: item.path === pathname ? "#3b82f6" :
-                                   hoverIndex === index ? "darkblue" : "#4b5563", // darkblue on hover
-                        }}
-                        onMouseEnter={() => setHoverIndex(index)}
-                        onMouseLeave={() => setHoverIndex(null)}
-                    >
-                        {item.name}
-                    </NavbarLink>
-                ))}
-            </Navbar.Collapse>
+        {MenuList.map((item, index) => (
+            <NavbarLink
+                key={index}
+                as={Link}
+                href={item.path}
+                active={item.path === pathname}
+                style={{
+                    fontSize: "1.25rem",
+                    color: item.path === pathname ? "#3b82f6" :
+                            hoverIndex === index ? "darkblue" : "#4b5563", 
+                }}
+                onMouseEnter={() => setHoverIndex(index)}
+                onMouseLeave={() => setHoverIndex(null)}
+            >
+                {item.name}
+            </NavbarLink>
+        ))}
+    </Navbar.Collapse>
     </Navbar>
   );
 }
