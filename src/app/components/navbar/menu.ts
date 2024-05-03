@@ -6,14 +6,14 @@ export const MenuList = [
         active: false,
     },
     {
-        name: "About",
-        path: "/about",
-        active: true,
-    },
-    {
         name: "Policy",
         path: "/policy",
         active: false,
+    },
+    {
+        name: "About",
+        path: "/about",
+        active: true,
     },
     {
         name: "My Shop",
