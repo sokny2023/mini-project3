@@ -1,11 +1,34 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Kantumruy_Pro, Poppins, Merriweather } from "next/font/google";
 import "../globals.css";
 import { NavbarComponent } from "../components/navbar/NavbarComponent";
 import { FooterComponent } from "../components/footer/FooterComponent";
 
 
 const inter = Inter({ subsets: ["latin"] });
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600","900"],
+  display: "swap",
+  style: ["italic", "normal"],
+  variable: "--font-poppins",
+});
+
+// const merriweather = Merriweather({
+//   subsets: ["latin"],
+//   weights: ["400", "700", "900"],
+//   styles: ["normal", "italic"], 
+//   display: "swap",
+//   variable: "--font-merriweather",
+// });
+
+const kantumruy_pro = Kantumruy_Pro({
+  subsets: ["khmer"],
+  display: "swap",
+  variable: "--font-kantumruy-pro",
+});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +42,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={kantumruy_pro.className}>
         <header className="shadow-ss1 sticky top-0 z-50">
           <section className="container mx-auto w-[92%]">
             <NavbarComponent />

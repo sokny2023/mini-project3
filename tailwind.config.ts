@@ -1,3 +1,4 @@
+import { Merriweather } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const flowbite = require("flowbite-react/tailwind");
@@ -12,6 +13,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+        kantumruy: ['var(--font-kantumruy-pro)'],
+        Merriweather: ['var(--font-merriweather)'],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

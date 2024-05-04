@@ -46,8 +46,8 @@ const HeroSection = () => {
           <div className="w-full rounded-lg overflow-hidden">
             <Image
               src="/assets/hero3.jpg"
-              width={500} // Specify desired width
-              height={600} // Specify desired height
+              width={500} 
+              height={600} 
               layout="responsive"
               className="rounded-lg"
               alt="Hero 1"
@@ -55,7 +55,7 @@ const HeroSection = () => {
           </div>
           <div className="mt-4 w-full lg:mt-10 rounded-lg overflow-hidden">
             <Image
-              src="/assets/hero2.jpg"
+              src="/assets/hero4.jpg"
               width={500}
               height={600}
               layout="responsive"
@@ -63,7 +63,7 @@ const HeroSection = () => {
               alt="Hero 2"
             />
           </div>
-          <div className="w-full rounded-lg overflow-hidden mt-[-80px] ml-[80px]">
+          <div className="w-full rounded-lg z-20 overflow-hidden mt-[-90px] ml-[80px]">
             <Image
               src="/assets/hero1.jpg"
               width={500}
@@ -71,6 +71,16 @@ const HeroSection = () => {
               layout="responsive"
               className="rounded-lg"
               alt="Hero 3"
+            />
+          </div>
+          <div className="w-full rounded-lg z-10 overflow-hidden ">
+            <Image
+              src="/assets/hero2.jpg"
+              width={500}
+              height={600}
+              layout="responsive"
+              className="rounded-lg"
+              alt="Hero 4"
             />
           </div>
         </div>

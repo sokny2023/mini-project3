@@ -5,6 +5,7 @@ import Link from "next/link";
 import CardProductComponent from "../components/card/CardProdct";
 import { Suspense } from "react";
 import Loading from "./loading";
+import FutureComponent from "../components/home/FutureComponent";
 
 async function fetchProduct() {
   const product = await fetch(
@@ -24,8 +25,9 @@ export default async function Home() {
   return (
     <>
       <HeroSection></HeroSection>
+      <FutureComponent></FutureComponent>
 
-      <h1 className="mt-6 text-center text-3xl text-blue-500 font-medium">Product List</h1>
+      <h1 className="mt-12 mb-4 text-center text-3xl text-blue-500 font-medium">Product List</h1>
       <div className="w-[90%] py-2 mx-auto mt-12 z-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center gap-8">
         <Suspense fallback={<Loading/>}>
           {product?.map((pro: ProductType) => (
